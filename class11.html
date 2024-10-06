@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #website{
+            display: none;
+        }
+        #img{
+            width: 200px;
+            margin-top: 10%;
+        }
+        #popup{
+            background-color: rgba(0, 0, 0, 0.445);
+            height: 70vh;
+            width: 100%;
+            padding: 80px 321px 80px 321px;
+            position: absolute;
+            top: 0px;
+            display: none;
+        }
+        #popupcontent{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(29, 61, 186);
+            color: white;
+            height: 350px;
+            width: 700px;
+            padding: 50px;
+        }
+        .fa-xmark{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="kuchbhi()">
+    
+    <center><img id="img" src="./iron_man_lob_pur_collection_01.jpg" alt=""></center>
+    
+    <section id="website">
+        <div id="popup">
+            <!-- onload="pop()" -->
+                <div id="popupcontent">
+                    login
+                    <i class="fa-solid fa-xmark" onclick="hide()"></i>
+                    
+                </div>
+        </div>
+        <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit molestiae eius voluptas dolor eos? Inventore sunt deserunt laborum autem!
+        </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, aperiam reprehenderit sapiente sint iure fugiat maxime, corrupti cumque dolore commodi eos itaque quidem necessitatibus est. Velit eaque nam est corporis?
+        </p>
+
+    </section>
+    <script src="higherfunction.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class10</title>
+    <style>
+        #formjs{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            
+        }
+        #formjs input{
+            width: 170px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+            margin-bottom: 10px;
+        }
+        #formjs button{
+            width: 175px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+            margin-bottom: 10px;
+        }
+        #gender{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formjs">
+        <div id="errorname"></div>
+        <label for="name">User Name</label><br>
+        <input type="text" placeholder="Enter Name" id="name" onblur="s('name');">
+        <br>
+        <div id="erroremail"></div>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="Enter Email Here" name="email" id="email" onblur="s('email');">
+        <br>
+        <label for="number">Mobile number</label><br>
+        <input type="number" placeholder="Enter Number here" name="number" id="number">
+        <br>
+        <label for="course">Course</label> <br>
+        <select name="course" id="course">
+            <option value="">Html</option>
+            <option value="">Css</option>
+            <option value="">JS</option>
+            <option value="">Full stack</option>
+            <option value="">Full stack MERN</option>
+        </select>
+        <br>
+        
+        
+        <label for="Gender">Select Gender :</label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="gender" name="Gender">
+
+        <label for="female">Female</label>
+        <input type="radio" id="gender" name="Gender">
+        <label for="other">Other</label>
+        <input type="radio" id="gender" name="Gender">
+        <br>
+        <div id="errorpassword"></div>
+        <label for="password">Password</label><br>
+        <input type="text" placeholder="Enter your Password\" id="password" onblur="s('password')"><br>
+        <div id="errorcpassword"></div>
+        <label for="cpassword">Confirm Password</label><br>
+        <input type="text" placeholder="Enter your Password\" id="cpassword" onblur="s('cpassword')"><br>
+        <button onclick="return data();">Submit</button>
+    </form>
+    <script src="./class10.js"></script>
+</body>
+</html>

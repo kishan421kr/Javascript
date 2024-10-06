@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#maindiv{
+    width: 600px;
+    height: 400px;
+    display: block;
+    justify-content: center;
+    
+}
+#heading{
+    text-align: center;
+}
+
+button{
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(70, 70, 171);
+    border: none;
+}
