@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Average</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #cal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(38, 128, 149);
+        height: 70vh;
+        /* color: white; */
+      }
+      #caldiv{
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.503);
+        border-radius: 20px;
+      }
+      label{
+        color: white;
+      }
+      input {
+        width: 250px;
+        height: 35px;
+        border-radius: 10px;
+        
+        margin-bottom: 10px;
+      }
+      button {
+        width: 150px;
+      }
+      button:hover{
+        background-color: rgba(158, 158, 158, 0.503);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="cal">
+      <article id="caldiv">
+        <div id="error1"></div>
+        <label for="number1">Enter first Number</label><br />
+        <input type="text" id="number1" placeholder="First Number here" /><br />
+
+        <div id="error2"></div>
+        <label for="number2">Enter Second Number</label><br />
+        <input type="text" id="number2" placeholder="Second Number here" /><br />
+
+        <div id="error3"></div>
+        <label for="number3">Enter Third Number</label><br />
+        <input type="text" id="number3" placeholder="Third Number here" /><br />
+
+        <button onclick="return cal();">Calculate Average</button>
+      </article>
+    </div>
+    <script src="./three_number.js"></script>
+  </body>
+</html>
