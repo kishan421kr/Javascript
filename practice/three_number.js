@@ -1,9 +1,9 @@
 function cal(){
-    let number1 = document.querySelector('#number1').value;
+    let number1 = parseFloat(document.querySelector('#number1').value);
     let number2 = parseFloat(document.querySelector('#number2').value);
     let number3 = parseFloat(document.querySelector('#number3').value);
-
-    console.log(number1,number2,number3);
+    let total=number1+number2+number3;
+    console.log(total);
 
     if(number1 === ""){
         document.querySelector('#error1').innerHTML ="please enter your name";
@@ -21,3 +21,6 @@ function cal(){
         return false;
     }
 }
+// function cal(num1,num2,num3){
+//     console.log(num1+num2+num3);
+// }
